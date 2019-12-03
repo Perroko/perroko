@@ -1,0 +1,262 @@
+body{
+  background-color: #ffffff;
+  height: 2300px;
+  color: #344277;
+  font-family: lato;
+}
+
+
+@font-face {
+  font-family: "Beauty";
+  src: url('FONT/Beauty.otf');
+}
+
+
+/* ZONE GRISE */
+
+
+div.gris {
+  background-color: #f8f8f8;
+  padding: 2%;
+  padding-bottom: 20%;
+}
+
+
+div.menu {
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+div.menu a:link, a:visited, a:active {
+  color: #344277;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+  padding-bottom: 5px;
+  transition-property: color;
+  transition-duration: 0.25s;
+  text-decoration: none;
+  position: relative;
+}
+
+div.menu a:hover:after {
+  content: "";
+  display: block;
+  height: 4px;
+  position: absolute;
+  background-color: #ca6a78;
+  top: 90%;
+  right: 0;
+  left: 0;
+}
+
+div.menu a:hover {
+  color: #ca6a78;
+}
+
+
+.icon {
+  width: 20px;
+}
+
+
+.logo {
+  width: 30%;
+  margin-left: 3%;
+}
+
+
+.imghead {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 200px;
+}
+
+
+p.title {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 3vw;
+  color: #ca6a78;
+  margin-top: 1%;
+  margin-left: 11%;
+  margin-bottom: 5%;
+}
+
+
+/* ZONE BLANCHE */
+
+
+h1 {
+  font-family: Beauty;
+  font-size: 50px;
+  line-height: 50px;
+  font-style: italic;
+  color: #ca6a78;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+
+p.texte {
+  padding: 10%;
+  padding-top: 5%;
+  text-align: justify;
+  font-size: 25px;
+  line-height: 1.3;
+}
+
+
+/* ZONE BLEUE  */
+
+
+div.bleu {
+  background-color: #344277;
+}
+
+
+h3 {
+  font-family: Beauty;
+  font-size: 50px;
+  line-height: 50px;
+  font-style: italic;
+  text-align: right;
+  color: #ffffff;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+
+p.texte2 {
+  padding: 10%;
+  padding-top: 0;
+  text-align: justify;
+  font-size: 25px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+
+.persoimg {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
+
+/* ZONE BLANCHE LIEUX */
+
+
+.lieux {
+  text-align: center;
+  border-collapse: collapse;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 45px;
+  margin-top: -50px;
+  font-family: Beauty;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+.lieux tr:nth-child(even) {
+  color: #cf7f7f;
+}
+
+.lieuximg {
+  width: 120%;
+}
+
+
+/* RESPONSIVE */
+
+
+@media screen and (max-width: 900px) {
+  body{
+  font-size: 17px;
+  height: 1550px;
+}
+div.menu a:link, a:visited, a:active {
+  font-size: 17px;
+}
+div.menu a:hover:after {
+  height: 3px;
+  background-color: #ca6a78;
+  top: 80%;
+}
+p.title {
+  font-size: 25px;
+  margin-bottom: 5%;
+  margin-left: 12%;
+}
+.icon {
+  width: 15px;
+}
+.logo {
+  width: 230px;
+}
+.imghead {
+  width: 50%;
+}
+h1, h3 {
+  font-size: 35px;
+}
+p.texte {
+  font-size: 19px;
+}
+p.texte2 {
+  font-size: 19px;
+}
+.persoimg {
+  margin-top: 3%;
+}
+.lieux {
+  font-size: 35px;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+body{
+  height: 1100px;
+}
+div.gris {
+  padding-bottom: 60%;
+}
+div.menu a:link, a:visited, a:active {
+  font-size: 14px;
+  margin: 3px;
+}
+.icon {
+  width: 12px;
+}
+.logo {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+p.title {
+  font-size: 20px;
+  text-align: center;
+  margin-right: 3%;
+}
+.imghead {
+  width: 80%;
+  top: 250px;
+  left: 10%;
+  right: 10%;
+}
+.persoimg {
+  width: 400px;
+  margin-top: 2%;
+}
+.lieux {
+  font-size: 25px;
+}
+}

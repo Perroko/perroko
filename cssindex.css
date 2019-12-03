@@ -1,0 +1,360 @@
+body{
+  background-color: #ffffff;
+  height: 2300px;
+  color: #344277;
+  font-family: lato;
+}
+
+
+@font-face {
+  font-family: "Beauty";
+  src: url('FONT/Beauty.otf');
+}
+
+
+/* ZONE GRISE */
+
+
+div.gris {
+  background-color: #f8f8f8;
+  padding: 2%;
+}
+
+
+div.menu {
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+div.menu a:link, a:visited, a:active {
+  color: #344277;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+  padding-bottom: 5px;
+  transition-property: color;
+  transition-duration: 0.25s;
+  text-decoration: none;
+  position: relative;
+}
+
+div.menu a:hover:after {
+  content: "";
+  display: block;
+  height: 4px;
+  position: absolute;
+  background-color: #ca6a78;
+  top: 90%;
+  right: 0;
+  left: 0;
+}
+
+div.menu a:hover {
+  color: #ca6a78;
+}
+
+
+.icon {
+  width: 20px;
+}
+
+
+.logo {
+  width: 30%;
+}
+
+
+.imghead {
+  width: 50%;
+  position: absolute;
+  right: 2%;
+  top: 200px;
+}
+
+
+p.title {
+  letter-spacing: 1px;
+  font-size: 25px;
+  margin-bottom: 20%;
+  margin-left: 3%;
+}
+
+
+/* ZONE BLANCHE */
+
+
+h1 {
+  font-family: Beauty;
+  font-size: 50px;
+  line-height: 50px;
+  font-style: italic;
+  color: #ca6a78;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+
+p.synopsis {
+  padding: 10%;
+  padding-top: 5%;
+  text-align: justify;
+  font-size: 25px;
+  line-height: 1.3;
+}
+
+
+/* ZONE BLEUE */
+
+
+div.bleu {
+  background-color: #344277;
+  height: 900px;
+}
+
+
+h2 {
+  font-family: Beauty;
+  font-size: 50px;
+  line-height: 50px;
+  font-style: italic;
+  text-align: right;
+  color: #ffffff;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+
+div.boxes {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  padding-bottom: 10%;
+  width: 810px;
+}
+
+
+#box1 {
+  background-image: url('IMAGES/box1.png');
+  background-size: cover;
+  height: 270px;
+  width: 270px;
+  display: inline-block;
+}
+
+#box2 {
+  background-color: #ca6a78;
+  color: #ffffff;
+  height: 210px;
+  width: 210px;
+  display: inline-block;
+  position: absolute;
+  left: 270px;
+  top: 0;
+  padding: 30px;
+}
+
+#box3 {
+  background-image: url('IMAGES/box3.png');
+  background-size: cover;
+  height: 270px;
+  width: 270px;
+  display: inline-block;
+  position: absolute;
+  left: 540px;
+  top: 0;
+}
+
+#box4 {
+  background-color: #8a6aa0;
+  height: 210px;
+  width: 210px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 270px;
+  color: #ffffff;
+  padding: 30px;
+}
+
+#box5 {
+  background-image: url('IMAGES/box5.png');
+  background-size: cover;
+  height: 270px;
+  width: 270px;
+  display: inline-block;
+  position: absolute;
+  left: 270px;
+  top: 270px;
+}
+
+#box6 {
+  background-color: #ffffff;
+  color: #2c292c;
+  height: 210px;
+  width: 210px;
+  display: inline-block;
+  position: absolute;
+  left: 540px;
+  top: 270px;
+  padding: 30px;
+}
+
+
+/* RESPONSIVE */
+
+
+@media screen and (max-width: 900px) {
+  body{
+  font-size: 17px;
+  height: 1550px;
+}
+div.menu a:link, a:visited, a:active {
+  font-size: 17px;
+}
+div.menu a:hover:after {
+  height: 3px;
+  background-color: #ca6a78;
+  top: 80%;
+}
+p.title {
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-bottom: 25%;
+}
+.icon {
+  width: 15px;
+}
+.logo {
+  width: 230px;
+}
+.imghead {
+  width: 50%;
+}
+h1 {
+  font-size: 35px;
+}
+p.synopsis {
+  font-size: 17px;
+  line-height: 1.3;
+}
+div.bleu {
+  height: 700px;
+}
+h2 {
+  font-size: 35px;
+}
+div.boxes {
+  font-size: 11.75px;
+  width: 540px;
+}
+#box1 {
+  height: 180px;
+  width: 180px;
+}
+#box2 {
+  height: 120px;
+  width: 120px;
+  left: 180px;
+  top: 0;
+}
+#box3 {
+  height: 180px;
+  width: 180px;
+  left: 360px;
+  top: 0;
+}
+#box4 {
+  height: 120px;
+  width: 120px;
+  left: 0;
+  top: 180px;
+}
+#box5 {
+  height: 180px;
+  width: 180px;
+  left: 180px;
+  top: 180px;
+}
+#box6 {
+  height: 120px;
+  width: 120px;
+  left: 360px;
+  top: 180px;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+body{
+  height: 1100px;
+}
+div.gris {
+  padding-bottom: 40%;
+}
+div.menu a:link, a:visited, a:active {
+  font-size: 14px;
+  margin: 3px;
+}
+.icon {
+  width: 12px;
+}
+.logo {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+p.title {
+  font-size: 20px;
+  text-align: center;
+  margin-right: 3%;
+}
+.imghead {
+  width: 80%;
+  top: 300px;
+  left: 10%;
+  right: 10%;
+}
+div.bleu {
+  height: 800px;
+}
+div.boxes {
+  font-size: 11px;
+  width: 340px;
+}
+#box1 {
+  height: 170px;
+  width: 170px;
+}
+#box2 {
+  height: 110px;
+  width: 110px;
+  left: 170px;
+  top: 0;
+}
+#box3 {
+  height: 170px;
+  width: 170px;
+  left: 170px;
+  top: 170px;
+}
+#box4 {
+  height: 110px;
+  width: 110px;
+  left: 0px;
+  top: 170px;
+}
+#box5 {
+  height: 170px;
+  width: 170px;
+  top: 340px;
+  left: 0;
+}
+#box6 {
+  height: 110px;
+  width: 110px;
+  left: 170px;
+  top: 340px;
+}
+}
